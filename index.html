@@ -289,7 +289,7 @@ color: white;
     </div>
 
     <div onclick="Change('Shifting')" class="Mod" id="Shifting Sunday">
-      <img class="ModImg" id="Shifting Sunday"  src="https://static.wikia.nocookie.net/fridaynightfunking/images/8/83/CottonIcon.png/revision/latest/scale-to-width-down/80?cb=20241120231441">
+      <img class="ModImg" id="Shifting Sunday"  src="https://github.com/SunnyGlitchue/funkin-launcher/blob/main/icons/CottonIcon.png?raw=true">
     </div>
 
     <div onclick="Change('Whitty')" class="Mod" id="Vs Whitty">
@@ -297,7 +297,7 @@ color: white;
     </div>
 
     <div onclick="Change('Aflac')" class="Mod" id="Vs Aflac">
-      <img class="ModImg" id="Vs Aflac" style="top: 5px; position: relative; width: 45px; height: 35px;"  src="https://static.wikia.nocookie.net/fridaynightfunking/images/4/40/AflacNewIcon.png/revision/latest?cb=20211201020849&format=original">
+      <img class="ModImg" id="Vs Aflac" style="top: 5px; position: relative; width: 45px; height: 35px;"  src="https://github.com/SunnyGlitchue/funkin-launcher/blob/main/icons/AflacNewIcon.png?raw=true">
     </div>
 
     <div onclick="Change('Wiik3')" class="Mod" id="Vs Matt Wiik 3">
@@ -309,11 +309,11 @@ color: white;
     </div>
 
     <div onclick="Change('Ddlc')" class="Mod" id="Doki Doki Takeover">
-      <img class="ModImg" id="Doki Doki Takeover" style=" width: 40px; transform: scale(0.9);"   src="https://static.wikia.nocookie.net/fridaynightfunking/images/6/62/MonikaRealIcon.png/revision/latest/scale-to-width-down/70?cb=20211027232702">
+      <img class="ModImg" id="Doki Doki Takeover" style=" width: 40px; transform: scale(0.9);"   src="https://github.com/SunnyGlitchue/funkin-launcher/blob/main/icons/MonikaRealIcon.png?raw=true">
     </div>
 
-    <div onclick="Change('Mouse')" class="Mod" id="Vs Mouse Test">
-      <img class="ModImg" id="Mouse"   src="https://static.wikia.nocookie.net/fridaynightfunking/images/7/70/MouseNewIcon.png/revision/latest?cb=20230315185549">
+    <div onclick="Change('Mouse')" class="Mod" id="Vs Mouse 2.0">
+      <img class="ModImg" id="Mouse"   src="https://github.com/SunnyGlitchue/funkin-launcher/blob/main/icons/MouseNewIcon.png?raw=true">
     </div>
 
     <div onclick="Change('Ca')" class="Mod" id="Vs Camellia">
@@ -479,10 +479,28 @@ function Change(Mod) {
     stuffForMod = 'https://mr-funkinguy.github.io/TKO-B-M-G-A-O/' 
   }
   if(Mod==='Ddlc') {
-    stuffForMod = 'https://game.fnfhub.net/24822/' 
+    stuffForMod = 'https://fnf.kdata1.com/doki-doki/1/' 
+    document.getElementById('AlertText').innerHTML = "WARNING: This mod contains unsettling things."
+    document.getElementById('AlertU').style.animation = "ShowWifiAlert 10.5s"
+
+    document.getElementById('Alertt').style.visibility = 'visible'
+
+    setTimeout(() => {
+        document.getElementById('Alertt').style.visibility = 'hidden'
+
+    }, 10500);
   }
   if(Mod==='Mouse') {
-    stuffForMod = 'https://game.fnfhub.net/6765/' 
+    stuffForMod = 'https://fnf.kdata1.com/horror-mouse/1/'
+    document.getElementById('AlertText').innerHTML = "WARNING: This mod contains screen shaking, and other unsettling things."
+    document.getElementById('AlertU').style.animation = "ShowWifiAlert 10.5s"
+
+    document.getElementById('Alertt').style.visibility = 'visible'
+
+    setTimeout(() => {
+        document.getElementById('Alertt').style.visibility = 'hidden'
+
+    }, 10500);
   }
   if(Mod==='Ca') {
     stuffForMod = 'https://ggl22.github.io/camellia/' 
@@ -491,7 +509,7 @@ function Change(Mod) {
     stuffForMod = 'https://ggl22.github.io/impostor-v3/' 
   }
   if(Mod==='Indie') {
-    stuffForMod = 'https://mod.fnfhub.net/24879/' 
+    stuffForMod = 'https://fnfcdn.com/indie-cross/" 
     document.getElementById('AlertText').innerHTML = "WARNING: This mod contains screen shaking, and other unsettling things."
     document.getElementById('AlertU').style.animation = "ShowWifiAlert 10.5s"
 
